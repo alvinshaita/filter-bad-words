@@ -1,13 +1,10 @@
 from http.server import BaseHTTPRequestHandler, HTTPServer
-
-# import socketserver
 import ctypes
 import threading
 import json
 import os
 import cgi
 import sys
-
 import gc
 
 gc_counter=0
@@ -33,7 +30,7 @@ class Server(BaseHTTPRequestHandler):
         if gc_counter%200000 == 0:
         	gc.collect()
       
-    #gets request on server
+    #gets request from server
     def do_POST(self):
         ctype, pdict = cgi.parse_header(self.headers.get('content-type'))
         length = int(self.headers.get('content-length'))
