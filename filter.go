@@ -40,5 +40,4 @@ func get_topics(word *C.char) *C.char {
 }
 
 
-func main(){
-}
+func main(){}
