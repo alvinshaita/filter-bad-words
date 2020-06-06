@@ -2,7 +2,7 @@
 
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
 
-filter chat with go
+Filter chat with go
 
 This project uses a json file, data.json, to determine topics in a particular text and outputs topics of input text.
 
